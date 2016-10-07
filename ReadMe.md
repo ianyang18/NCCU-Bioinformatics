@@ -7,4 +7,6 @@ This course is opened by [Jia-Ming Chang Prof.](http://www.changlabtw.com/pi-243
 I'll update any Bioinformatics related materials and provide assignments here to discuss. If there is any mistake, please feel free to contact me and I will correct ASAP.
  
 ##Reference
+- Cedric Notredame - [Bioinformatics](http://www.tcoffee.org/Courses/Exercises/index.html)
 - Yale - [Bioinformatics: Practical Application of Data Mining & Simulation](http://cbb752b16.gersteinlab.org)
+
