@@ -4,6 +4,14 @@
 # Output file: pam250.txt
 ##########################################
 
+# library "gdata" is suitable for data alignment, adjusting the data formation
+if(!require("gdata")) {
+    install.packages("gdata",repos="http://cran.rstudio.com/")
+    library("gdata")
+} else {
+    library("gdata")
+}
+
 # Read the data from "pam1.txt"
 pam1<-read.table("pam1.txt")
 
@@ -36,5 +44,11 @@ for (p in 1:250) {
     }
 }
 
+# Round the number to decimal places 2
+pam250r<-round(pam250, digits = 2)
+pam250s<-pam250r*100
+
 # Write the result into the file "pam250.txt"
 write.table(pam250,"pam250.txt",col.names=TRUE,row.names=TRUE)
+write.table(pam250r,"pam250_round.txt",col.names=TRUE,row.names=TRUE)
+write.fwf(pam250s,file="pam250_scale100.txt",sep="\t",quote=F,rownames=T,rowCol=" ",justify="right")
