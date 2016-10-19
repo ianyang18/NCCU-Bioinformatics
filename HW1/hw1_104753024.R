@@ -31,7 +31,7 @@ for (col in d) {
 #   i, j is the row, column index of the PAM matrix.
 #   e is the element storing the middle result of the inner product.
 pam250<-pam1
-for (p in 1:250) {
+for (p in 1:249) {
     for (i in d) {
         for (j in d) {
             e<-0
